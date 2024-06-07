@@ -1,0 +1,15 @@
+{%- extends "!page.html" %}
+
+{{ super() }}
+
+{%- block extrahead %}
+{# `mode` is injected via `html_context` in `conf.py` #}
+{# You can override it with `-A` at build time #}
+{%- if mode == "production" %}
+<script async src="https://sphinxawesome.up.railway.app/script.js" data-website-id="5e3ad354-ab2b-4914-94f4-e390005d2389"></script>
+{%- endif %}
+{%- endblock %}
+
+{%- block body_after %}
+  {%- include "feedback.html" %}
+{%- endblock %}

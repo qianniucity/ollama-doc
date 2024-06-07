@@ -1,0 +1,63 @@
+# Ollama 0.1.39 版本现已推出
+
+### 新模型介绍
+
+- Cohere Aya 23：这是一个全新的、最先进的多语言大语言模型（LLM），它能够支持23种不同的语言。
+- Mistral 7B 0.3：这是 Mistral 7B 的更新版，新增了对函数调用的初步支持。
+- Phi-3 Medium：这是由微软（Microsoft）推出的一种 14B 参数的轻量级、最先进的开放模型。
+- Phi-3 Mini 128K 和 Phi-3 Medium 128K：这些是 Phi-3 模型的变种，它们支持 128K 大小的上下文窗口。
+- Granite code：这是由 IBM 为代码智能开发的一系列开放基础模型。
+
+### Llama 3 导入功能
+
+现在，你可以将 Llama 3 及其微调版本从 Safetensors 格式导入并量化到 Ollama 平台了。
+
+首先，克隆一个带有 Safetensors 模型的 Hugging Face 仓库：
+
+```python
+git clone https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
+cd Meta-Llama-3-8B-Instruct
+```
+
+接着，创建一个 Modelfile 文件：
+
+```python
+FROM .
+
+TEMPLATE """{{ if .System }}<|start_header_id|>system<|end_header_id|>
+
+{{ .System }}<|eot_id|>{{ end }}{{ if .Prompt }}<|start_header_id|>user<|end_header_id|>
+
+{{ .Prompt }}<|eot_id|>{{ end }}<|start_header_id|>assistant<|end_header_id|>
+
+{{ .Response }}<|eot_id|>"""
+
+PARAMETER stop <|start_header_id|>
+PARAMETER stop <|end_header_id|>
+PARAMETER stop <|eot_id|>
+```
+
+然后，创建并量化一个模型：
+
+```python
+ollama create --quantize q4_0 -f Modelfile my-llama3 
+ollama run my-llama3
+```
+
+### 更新内容
+
+- 修正了在处理中文、韩文、日文和俄文等宽字符语言时出现的问题。
+- 新增了 OLLAMA_NOHISTORY=1 环境变量，设置后可以在使用 ollama run 时禁用历史记录功能。
+- 推出了新的实验性 OLLAMA_FLASH_ATTENTION=1 标志，用于 ollama serve，能够在苹果硅芯片 Mac 和 NVIDIA 显卡上提高词元生成速度。
+- 修复了在 Windows 系统上运行 ollama create -f Modelfile 时可能遇到的错误。
+- ollama create 现在能够从 I-Quant GGUF 文件创建模型。
+- 修复了使用 ollama pull 恢复下载时出现的 EOF 错误。
+- ollama run 新增了 Ctrl+W 快捷键。
+
+### 资源链接：
+
+- Cohere Aya 23：https://ollama.com/library/aya
+- Mistral 7B 0.3：https://ollama.com/library/mistral:v0.3
+- Phi-3 Medium：https://ollama.com/library/phi3:medium
+- Phi-3 Mini 128K 和 Phi-3 Medium 128K：https://ollama.com/library/phi3:mini-128k
+- Granite code：https://ollama.com/library/granite-code

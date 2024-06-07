@@ -1,0 +1,50 @@
+.feedback {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  padding-top: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+}
+
+#upvote,
+#downvote {
+  border-radius: var(--radius);
+}
+
+#upvote:hover,
+#upvote:focus {
+  color: #059669;
+}
+
+#upvote:hover {
+  background-color: #ecfdf5;
+}
+
+#upvote > svg {
+  margin-bottom: 5px;
+}
+
+#downvote:hover,
+#downvote:focus {
+  color: #dc2626;
+}
+
+#downvote:hover {
+  background-color: #fef2f2;
+}
+
+.feedback-send {
+  display: block;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius);
+  border: 1px solid hsl(var(--border));
+}
+
+.feedback-send:hover,
+.feedback-send:focus {
+  background-color: hsl(var(--accent));
+  color: hsl(var(--accent-foreground));
+}

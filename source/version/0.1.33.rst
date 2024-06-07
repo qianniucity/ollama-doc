@@ -1,0 +1,23 @@
+Ollama 0.1.33 版本现已推出
+===========================
+**新模型介绍**
+
+在AI领域的最新动态中，Ollama迎来了多款刷新认知的模型更新，它们旨在为用户提供更优质的体验和更高效的性能。 
+
+- **Llava Llama 3** ： 这款模型是基于Llama 3 Instruct进行细致微调后的产物，它展现了LLaVA模型在高性能处理上的新高度。
+- **Llava Phi 3** ：作为一个体积更小、功能依旧强大的模型，Llava Phi 3通过从Phi 3微调得来，证明了在资源有限的情况下也能发挥出色的性能。
+- **StarCoder2 15B Instruct** ：这是StarCoder2模型的进化版本，专为编码任务而生，通过最新的指令式微调，使得编程工作变得更加轻松。
+- **CodeGemma 1.1** ：CodeGemma模型的最新版本，为代码生成和自动化编程带来了新的可能性。
+- **StableLM2 12B** ：由Stability AI推出的StableLM 2模型的12B版本，标志着在稳定性和模型性能上的又一次飞跃。
+- **Moondream 2** ：Moondream 2通过对运行参数的优化，为用户带来了更加精准和高效的响应。
+
+**最近更新和修复**
+
+- 解决了LLaVa模型在接收首个请求后可能出现的响应错误问题。
+- 解决了运行大型模型（如Llama 3 70B）时可能遇到的内存溢出问题。
+- 修复了在Linux和Windows系统上发现Nvidia GPU时遇到的问题。
+- 解决了使用ollama create命令时遇到的一系列Modelfile错误。
+- 修复了取消一个请求后，随后请求可能遇到的“无可用槽位”错误。
+- 在Fedora系统上，AMD GPU的检测功能得到了改进。
+- 使用OLLAMA_NUM_PARALLEL和OLLAMA_MAX_LOADED标志时，系统的可靠性得到了提升。
+- 现在，即使在模型加载过程中，ollama serve也能迅速完成关闭操作。

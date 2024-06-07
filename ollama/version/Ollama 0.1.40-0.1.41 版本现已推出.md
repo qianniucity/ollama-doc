@@ -1,0 +1,26 @@
+# Ollama 0.1.33 版本现已推出
+
+![335741666-d3aba466-40cc-4878-b2bb-34ecbae977d3.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/9903f5b0-d0a4-47c4-8ff7-67753816eda4/01146aeb-56b2-46cb-b5f6-a0b87755db45/335741666-d3aba466-40cc-4878-b2bb-34ecbae977d3.png)
+
+### 新推出的模型
+
+- Codestral：这是 Mistral AI 首次推出的代码生成模型，专门为编码任务设计。
+- IBM Granite Code：专门为编码任务设计，目前提供 3B 和 8B 两种模型大小。
+- Deepseek V2：一款强大、经济又高效的混合专家语言模型。
+
+### 更新内容
+
+- 修正了在 16GB 容量的 Mac 上运行 Codestral 时出现的内存溢出和词元识别错误的问题。
+- 解决了在使用 ollama run 时，会删除行尾全角字符（比如日文、中文、俄文）的问题。
+- 修复了在 Windows 10 和 11 上使用集成英特尔 CPU 时 Ollama 会遇到错误的问题。
+
+### 新增示例
+
+- 使用 continue 开源模型作为编程助手。
+
+参考链接：
+
+- Codestral：https://mistral.ai/news/codestral/
+- IBM Granite Code：https://huggingface.co/collections/ibm-granite/granite-code-models-6624c5cec322e4c148c8b330
+- Deepseek V2：https://github.com/deepseek-ai/DeepSeek-V2
+- Continue：https://www.continue.dev/

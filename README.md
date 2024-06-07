@@ -31,19 +31,19 @@ Ollama 支持的模型库列表 [ollama.com/library](https://ollama.com/library 
 
 
 ## ollama 使用指南
-[Docker 镜像指南](<ollama/docs/Ollama Docker 镜像指南.md>)
-[Linux 使用指南](<ollama/docs/Ollama Linux 使用指南.md>)
-[如何排除故障](<ollama/docs/Ollama 如何排除故障.md>)
-[对GPU 支持信息](<ollama/docs/Ollama 对GPU 支持信息.md>)
-[导入模型](<ollama/docs/Ollama 导入模型.md>)
-[常见问题解答](<ollama/docs/ollama 常见问题解答.md>)
+- [Docker 镜像指南](<ollama/docs/Ollama Docker 镜像指南.md>)
+- [Linux 使用指南](<ollama/docs/Ollama Linux 使用指南.md>)
+- [如何排除故障](<ollama/docs/Ollama 如何排除故障.md>)
+- [对GPU 支持信息](<ollama/docs/Ollama 对GPU 支持信息.md>)
+- [导入模型](<ollama/docs/Ollama 导入模型.md>)
+- [常见问题解答](<ollama/docs/ollama 常见问题解答.md>)
 
 ## 版本更新
-[0.1.33](<ollama/version/Ollama 0.1.33 版本现已推出.md>)
-[0.1.34](<ollama/version/Ollama 0.1.34 版本现已推出.md>)
-[0.1.35](<ollama/version/Ollama 0.1.35 版本现已推出.md>)
-[0.1.36](<ollama/version/Ollama 0.1.36 版本现已推出.md>)
-[0.1.37](<ollama/version/Ollama 0.1.37 版本现已推出.md>)
-[0.1.38](<ollama/version/Ollama 0.1.38 版本现已推出.md>)
-[0.1.39](<ollama/version/Ollama 0.1.39 版本现已推出.md>)
-[0.1.40-0.1.41](<ollama/version/Ollama 0.1.40-0.1.41 版本现已推出.md>)
+- [0.1.33](<ollama/version/Ollama 0.1.33 版本现已推出.md>)
+- [0.1.34](<ollama/version/Ollama 0.1.34 版本现已推出.md>)
+- [0.1.35](<ollama/version/Ollama 0.1.35 版本现已推出.md>)
+- [0.1.36](<ollama/version/Ollama 0.1.36 版本现已推出.md>)
+- [0.1.37](<ollama/version/Ollama 0.1.37 版本现已推出.md>)
+- [0.1.38](<ollama/version/Ollama 0.1.38 版本现已推出.md>)
+- [0.1.39](<ollama/version/Ollama 0.1.39 版本现已推出.md>)
+- [0.1.40-0.1.41](<ollama/version/Ollama 0.1.40-0.1.41 版本现已推出.md>)

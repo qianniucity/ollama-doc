@@ -1,0 +1,19 @@
+Ollama 0.1.42  版本现已推出
+=====================================
+
+**新推出的模型**
+
+- [Qwen 2](https://ollama.com/library/qwen2)：阿里巴巴集团全新系列大型语言模型
+
+**更新内容**
+
+- 修复了在 Nvidia 和 AMD 的 GPU 上，qwen2 会错误地输出“GGG”这样的文本的问题。
+- 如果发现模型已下载，ollama 的拉取操作现在会变得更加迅速。
+- ollama 在创建时，现在能自动识别流行的模型架构（比如 Llama、Gemma、Phi 等）的提示模板。
+- Ollama 现在支持在用 Electron 和 Tauri 开发的本地应用程序中访问，也支持在本地 html 文件开发的应用中访问。
+- 在 Windows 系统上，欢迎提示更新为“llama3”。
+- 修复了`/api/ps`和`/api/tags`在响应中显示无效时间戳的问题
+
+**参考链接**：
+
+- Qwen 2：https://ollama.com/library/qwen2

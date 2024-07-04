@@ -1,0 +1,11 @@
+Ollama 0.1.44  版本现已推出
+=====================================
+
+**更新内容**
+
+- 解决了在执行 ollama create 命令时，表情符号等 Unicode 字符无法正确加载的问题
+- 解决了在某些情况下 Nvidia GPU 无法被识别，并错误地标记为计算能力仅为 1.0 的设备的问题
+
+**资源链接：**
+
+- import：https://github.com/ollama/ollama/blob/main/docs/import.md
